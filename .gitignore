@@ -1,0 +1,33 @@
+# Keil build outputs
+OBJ/
+Objects/
+Listings/
+DebugConfig/
+*.uvguix.*
+*.uvoptx
+*.axf
+*.hex
+*.bin
+*.map
+*.lst
+*.o
+*.d
+*.crf
+*.dep
+*.lnp
+*.htm
+*.build_log.htm
+*.log
+JLinkSettings.ini
+
+# IDE / user settings
+.vscode/
+.idea/
+*.user
+
+# OS / temp
+Thumbs.db
+.DS_Store
+~$*
+*.tmp
+__pycache__/
