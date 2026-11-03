@@ -1,7 +1,7 @@
-# 净巡卫士 · GD32F303 + STM32F103 双板 RT-Thread 工程
+# 净巡卫士 · GD32H759 + STM32F103 双板 RT-Thread 工程
 
 
-> **平台口径：** 本项目报名平台为 `GD32H759`，喷洒控制为 `STM32F103C8T6`。H759 固件需按实际开发板引脚表迁移；当前 `gd32f303-main` 作为参考工程保留。详见 [docs/REGISTRATION_CORRECTION.md](docs/REGISTRATION_CORRECTION.md)。
+> **平台口径：** 本项目报名平台为 `GD32H759`，喷洒控制为 `STM32F103C8T6`。当前仓库中的 `gd32f303-main` 是已验证的参考实现；H759 实机工程需按实际开发板型号和引脚表迁移。详见 [docs/REGISTRATION_CORRECTION.md](docs/REGISTRATION_CORRECTION.md)。
 
 “净巡卫士”是一套面向教室、楼道、公共座椅等中小型公共区域的智能消杀移动装置。项目采用 **GD32F303RCT6 运动主控 + STM32F103C8T6 喷洒控制 + RT-Thread 4.1.1** 的双 MCU 架构，实现四轮差速移动、机械臂雾化喷洒、HX711 余量监测、远程遥控、预约消杀、状态上报和视频回传。
 
