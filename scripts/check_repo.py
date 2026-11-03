@@ -18,6 +18,7 @@ REQUIRED = [
     "docs/CODE_STYLE.md",
     "docs/HARDWARE.md",
     "docs/PROTOCOL.md",
+    "docs/REGISTRATION_CORRECTION.md",
     "docs/assets/system-architecture.png",
     "docs/assets/rtthread-tasks.png",
     "firmware/gd32f303-main/USER/GD32F303_RTThread.uvprojx",
