@@ -18,10 +18,11 @@ REQUIRED = [
     "docs/CODE_STYLE.md",
     "docs/HARDWARE.md",
     "docs/PROTOCOL.md",
+    "docs/GD32H759I-START_User_Guide.pdf",
     "docs/REGISTRATION_CORRECTION.md",
     "docs/assets/system-architecture.png",
     "docs/assets/rtthread-tasks.png",
-    "firmware/gd32f303-main/USER/GD32F303_RTThread.uvprojx",
+    "firmware/gd32h759-main/MDK-ARM/GD32H759_RTThread.uvprojx",
     "firmware/stm32f103-spray/SPRAY_RTThread.uvprojx",
     "scripts/build-keil.ps1",
     "scripts/format-code.ps1",
@@ -30,6 +31,9 @@ FORBIDDEN_DIRS = {"OBJ", "Objects", "Listings", "DebugConfig", "__pycache__"}
 TEXT_EXTS = {".c", ".h", ".s", ".S", ".md", ".txt", ".ps1", ".py", ".uvprojx"}
 
 errors = []
+
+if (ROOT / "firmware/gd32f303-main").exists():
+    errors.append("legacy GD32F303 firmware directory must not be present in the H759 repository")
 
 for rel in REQUIRED:
     if not (ROOT / rel).is_file():

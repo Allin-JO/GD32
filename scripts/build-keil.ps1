@@ -17,7 +17,7 @@ if (-not $candidates) {
 
 $uv4 = (Resolve-Path -LiteralPath $candidates[0]).Path
 $projects = @(
-    'firmware\gd32f303-main\USER\GD32F303_RTThread.uvprojx',
+    'firmware\gd32h759-main\MDK-ARM\GD32H759_RTThread.uvprojx',
     'firmware\stm32f103-spray\SPRAY_RTThread.uvprojx'
 )
 $logDir = Join-Path $root 'build-logs'

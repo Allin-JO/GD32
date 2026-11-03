@@ -8,9 +8,9 @@ This repository contains code and documentation from several sources.
 RT-Thread is licensed under the Apache License 2.0. The license text is
 included at `firmware/*/rt-thread/LICENSE`.
 
-## GD32F30x firmware library
+## GD32H7xx firmware library
 
-`firmware/gd32f303-main/GD32F30x_FWLib/` contains GigaDevice GD32F30x CMSIS
+`firmware/gd32h759-main/GD32H7xx_Firmware_Library/` contains GigaDevice GD32H7xx CMSIS
 and standard peripheral library files. Copyright and license terms are stated
 in the file headers and the bundled library README.
 
@@ -30,3 +30,4 @@ author.
 
 A project-wide open-source license has not been selected in this repository.
 The author should choose and add a license before public redistribution.
+

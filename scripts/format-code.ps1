@@ -10,13 +10,13 @@ if (-not $formatter) {
 }
 
 $files = @()
-$files += Get-ChildItem (Join-Path $root 'firmware\gd32f303-main\APP') -File -Recurse | Where-Object { $_.Extension -in '.c', '.h' }
-$files += Get-ChildItem (Join-Path $root 'firmware\gd32f303-main\BOARD') -File -Recurse | Where-Object { $_.Extension -in '.c', '.h' }
-$files += Get-ChildItem (Join-Path $root 'firmware\gd32f303-main\USER') -File | Where-Object { $_.Name -in 'main.c', 'rtconfig.h', 'stm32f10x.h' }
-$files += Get-ChildItem (Join-Path $root 'firmware\gd32f303-main\SYSTEM') -File -Recurse | Where-Object { $_.Extension -in '.c', '.h' }
-$files += Get-ChildItem (Join-Path $root 'firmware\gd32f303-main\HAREWARE') -File -Recurse |
+$files += Get-ChildItem (Join-Path $root 'firmware\gd32h759-main\APP') -File -Recurse | Where-Object { $_.Extension -in '.c', '.h' }
+$files += Get-ChildItem (Join-Path $root 'firmware\gd32h759-main\BOARD') -File -Recurse | Where-Object { $_.Extension -in '.c', '.h' }
+$files += Get-ChildItem (Join-Path $root 'firmware\gd32h759-main\USER') -File | Where-Object { $_.Name -in 'main.c', 'rtconfig.h', 'stm32f10x.h' }
+$files += Get-ChildItem (Join-Path $root 'firmware\gd32h759-main\SYSTEM') -File -Recurse | Where-Object { $_.Extension -in '.c', '.h' }
+$files += Get-ChildItem (Join-Path $root 'firmware\gd32h759-main\HAREWARE') -File -Recurse |
     Where-Object { $_.Extension -in '.c', '.h' -and $_.Name -ne 'oledfont.h' -and $_.FullName -notmatch '\\ICM20948\\' }
-$files += Get-ChildItem (Join-Path $root 'firmware\gd32f303-main\BALANCE') -File -Recurse | Where-Object { $_.Extension -in '.c', '.h' }
+$files += Get-ChildItem (Join-Path $root 'firmware\gd32h759-main\BALANCE') -File -Recurse | Where-Object { $_.Extension -in '.c', '.h' }
 $files += Get-ChildItem (Join-Path $root 'firmware\stm32f103-spray\APP') -File -Recurse | Where-Object { $_.Extension -in '.c', '.h' }
 $files += Get-ChildItem (Join-Path $root 'firmware\stm32f103-spray\BOARD') -File -Recurse | Where-Object { $_.Extension -in '.c', '.h' }
 $files += Get-ChildItem (Join-Path $root 'firmware\stm32f103-spray\User') -File | Where-Object { $_.Name -in 'main.c', 'rtconfig.h' }
