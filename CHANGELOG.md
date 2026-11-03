@@ -9,6 +9,7 @@
 - GD32 + STM32 system architecture diagram and updated submission document.
 
 ### Changed
+- Corrected the registered controller information: the actual prototype uses GD32F303RCT6 + STM32F103C8T6, not GD32H759.
 - Main controller migrated from STM32F103RCT6 to GD32F303RCT6.
 - Main controller clock kept at 72 MHz for compatibility with the existing 10 kHz PWM and PI parameters.
 - Peripheral mapping updated: TIM2/3/4/5/8 to TIMER1/2/3/4/7, USART1/2/3 to USART0/1/2, ADC1 to ADC0.
